@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface IssueRepository extends JpaRepository<Issue, Long> {
 
-    public List<Issue> findIssuesByBook(Book book);
+    List<Issue> findIssuesByBook(Book book);
 
-    public List<Issue> findIssuesByReader(Reader reader);
+    List<Issue> findIssuesByReader(Reader reader);
 }
